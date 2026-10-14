@@ -22,8 +22,10 @@ startButton.addEventListener('click', () => {
         }); 
         audio.addEventListener('ended', () => {
             isPlaying = false;
+            isAudioLoaded = false;
             audioProgress.value = 0;
             startButton.textContent = '音声を再生';
+            document.getElementById('subtitle').textContent = '音声の再生を終了しました。';
         });
         startButton.textContent = '音声を停止';
     }else{
