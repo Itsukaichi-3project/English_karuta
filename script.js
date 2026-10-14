@@ -12,7 +12,7 @@ startButton.addEventListener('click', () => {
         isPlaying = true;
         const randomIndex = Math.floor(Math.random() * letters.length);
         const item = letters.splice(randomIndex, 1)[0];
-        let audio = new Audio(`https://raw.githubusercontent.com/Itsukaichi-3project/English_karuta/main/audio/${item}.m4a`);
+        audio = new Audio(`https://raw.githubusercontent.com/Itsukaichi-3project/English_karuta/main/audio/${item}.m4a`);
         audio.play();
         audio.addEventListener('timeupdate', () => {
             const progress = (audio.currentTime / audio.duration) * 100;
