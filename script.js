@@ -20,6 +20,7 @@ startButton.addEventListener('click', () => {
         audio.addEventListener('ended', () => {
             isPlaying = false;
             audioProgress.value = 0;
+            startButton.textContent = '音声を再生';
         });
         startButton.textContent = '音声を停止';
     }
