@@ -2,6 +2,7 @@ const startButton = document.getElementById('start-button');
 const letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 let audioProgress = document.getElementById('progressBar');
 let isPlaying = false;
+let audio = null;
 startButton.addEventListener('click', () => {
     if(isPlaying) {
         audio.pause();
