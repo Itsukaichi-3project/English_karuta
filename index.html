@@ -73,10 +73,10 @@
             <div class="spinner"></div>
             <div class="loading-text">読み込み中...</div>
         </div>
-        <div id="main-content" class="hidden maincontent">
+        <div id="main-content" class="hidden main-content">
             <!-- メインコンテンツはここに表示されます -->
-            <button id="start-button" class="main-button">音声を再生</button>
-            <input type="range" id="audio_progress" value="0" min="0" max="100" style="width: 100%; margin-top: 10px;pointer-events: none;">
+            <div id="start-button" class="main-button">音声を再生</div>
+            <progress id="progressBar" value="0" max="100" style="width: 100%; margin-top: 10px;"></progress>
         </div>
         <script>
             (async function() {

@@ -1,6 +1,6 @@
 const startButton = document.getElementById('start-button');
 const letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
-const audioProgress = document.getElementById('audio_progress');
+const audioProgress = document.getElementById('progressBar');
 const isPlaying = false;
 startButton.addEventListener('click', () => {
     if(isPlaying) {
