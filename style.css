@@ -12,6 +12,7 @@
     cursor: pointer;
     background-color: #5170ff;
     text-align: center;
+    align-items: center;
     color: white;
     font-family: 'Noto Serif JP', serif;
     font-size: 32px;
