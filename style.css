@@ -24,6 +24,7 @@
 .main-button {
     width: 30%;
     height: 10%;
+    display: flex;
 }
 .replay-button {
     width: 30%;
