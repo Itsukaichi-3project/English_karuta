@@ -20,7 +20,6 @@
     box-shadow 0.2s ease,
 }
 .main-button {
-    overflow: hidden;
     align-items: center;
     width: 30%;
     height: 10%;

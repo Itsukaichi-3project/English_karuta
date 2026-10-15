@@ -43,6 +43,9 @@ replayButton.addEventListener('click', () => {
     if(audio) {
         audio.currentTime = 0;
         audio.play();
+        startButton.classList.remove('hidden');
+        buttonsContainer.classList.add('hidden');
+        startButton.textContent = '音声を停止';
     }
 });
 nextButton.addEventListener('click', () => {
