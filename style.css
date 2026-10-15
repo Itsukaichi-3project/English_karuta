@@ -23,6 +23,7 @@
     box-shadow 0.2s ease,
 }
 .main-button {
+    display: flex;
     align-items: center;
     width: 50%;
     height: 10%;
