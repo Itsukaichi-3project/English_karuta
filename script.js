@@ -63,7 +63,7 @@ nextButton.addEventListener('click', () => {
         startButton.classList.remove('hidden');
         mainImage.classList.add('hidden');
         karutaImage.classList.remove('hidden');
-        karutaImage.textContent = item;
+        karutaImage.textContent = `${item}`;
         subtitle.textContent = `読み上げたカードは${item}でした。`;
     }
 });
