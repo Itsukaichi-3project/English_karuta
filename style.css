@@ -15,6 +15,9 @@
     font-family: 'Noto Serif JP', serif;
     font-size: 32px;
     border: 1px solid #ccc;
+    display: flex;
+    text-align: center;
+    justify-content: center;
     transition:
     transform 0.2s ease,
     box-shadow 0.2s ease,
@@ -23,9 +26,7 @@
     align-items: center;
     width: 50%;
     height: 10%;
-    display: flex;
-    text-align: center;
-    justify-content: center;
+
 }
 .run-button {
     border-radius: 20px;
@@ -50,7 +51,7 @@
     box-shadow: none;
 }
 .progress {
-    width: 30%;
+    width: 50%;
     height: 20px;
     margin-top: 20px;
 }
