@@ -20,11 +20,15 @@
     box-shadow 0.2s ease,
 }
 .main-button {
+    overflow: hidden;
     border: 1px solid #ccc;
     border-radius: 20px;
     width: 30%;
     height: 10%;
     display: flex;
+    transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
 }
 .replay-button {
     width: 30%;
@@ -39,6 +43,14 @@
     box-shadow: 0 8px 25px rgba(0,0,0,0.08);
 }
 .button:active{
+    transform: translateY(0);
+    box-shadow: none;
+}
+.main-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+.main-button:active{
     transform: translateY(0);
     box-shadow: none;
 }
