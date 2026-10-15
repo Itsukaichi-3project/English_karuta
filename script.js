@@ -21,10 +21,10 @@ startButton.addEventListener('click', () => {
         item = letters.splice(randomIndex, 1)[0];
         audio = new Audio(`https://raw.githubusercontent.com/Itsukaichi-3project/English_karuta/main/audio/${item}.m4a`);
         audio.play();
+        subtitle.textContent = `音声を再生中`;
         audio.addEventListener('timeupdate', () => {
             const progress = (audio.currentTime / audio.duration) * 100;
             audioProgress.value = progress;
-        subtitle.textContent = `音声を再生中`;
         }); 
         audio.addEventListener('ended', () => {
             isPlaying = false;
