@@ -3,6 +3,8 @@ const buttonsContainer = document.getElementById('ended-buttons');
 const replayButton = document.getElementById('replay-button');
 const nextButton = document.getElementById('next-button');
 const subtitle = document.getElementById('subtitle');
+const mainImage = document.getElementById('main-image');
+const karutaImage = document.getElementById('karuta_image');
 const letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 let audioProgress = document.getElementById('progressBar');
 let isPlaying = false;
@@ -59,6 +61,9 @@ nextButton.addEventListener('click', () => {
         startButton.textContent = '音声を再生';
         buttonsContainer.classList.add('hidden');
         startButton.classList.remove('hidden');
+        mainImage.classList.add('hidden');
+        karutaImage.classList.remove('hidden');
+        karutaImage.textContent = item;
         subtitle.textContent = `読み上げたカードは${item}でした。`;
     }
 });
