@@ -15,9 +15,6 @@
     color: white;
     font-family: 'Noto Serif JP', serif;
     font-size: 32px;
-    transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease,
 }
 .main-button {
     overflow: hidden;
@@ -26,6 +23,7 @@
     width: 30%;
     height: 10%;
     display: flex;
+    text-align: center;
     transition:
     transform 0.2s ease,
     box-shadow 0.2s ease,
@@ -37,14 +35,6 @@
 .next-button {
     width: 70%;
     height: 100%;
-}
-.button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-}
-.button:active{
-    transform: translateY(0);
-    box-shadow: none;
 }
 .main-button:hover {
     transform: translateY(-3px);
