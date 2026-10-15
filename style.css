@@ -7,27 +7,37 @@
     justify-content: center;
     height: 100%;
 }
-.main-button {
-    width:30%;
-    height:10%;
+.button {
     font-size: 16px;
     cursor: pointer;
-    border: 1px solid #ccc;
-    border-radius: 20px;
     background-color: #5170ff;
     text-align: center;
     color: white;
     font-family: 'Noto Serif JP', serif;
     font-size: 32px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
     transition:
     transform 0.2s ease,
     box-shadow 0.2s ease,
 }
-.main-button:hover {
+.main-button {
+    width: 30%;
+    height: 10%;
+}
+.replay-button {
+    width: 30%;
+    height: 100%;
+}
+.next-button {
+    width: 70%;
+    height: 100%;
+}
+.button:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(0,0,0,0.08);
 }
-.main-button:active{
+.button:active{
     transform: translateY(0);
     box-shadow: none;
 }
@@ -45,4 +55,7 @@ html,body {
     margin-top: 20px;
     color: #77856a;
     text-align: center;
+}
+.hidden {
+    display: none;
 }

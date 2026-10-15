@@ -1,4 +1,7 @@
 const startButton = document.getElementById('start-button');
+const buttonsContainer = document.getElementById('ended-buttons');
+const replayButton = document.getElementById('replay-button');
+const nextButton = document.getElementById('next-button');
 const letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 let audioProgress = document.getElementById('progressBar');
 let isPlaying = false;
@@ -26,6 +29,8 @@ startButton.addEventListener('click', () => {
             audioProgress.value = 0;
             startButton.textContent = '音声を再生';
             document.getElementById('subtitle').textContent = '音声の再生を終了しました。';
+            startButton.classList.add('hidden');
+            buttonsContainer.classList.remove('hidden');
         });
         startButton.textContent = '音声を停止';
     }else{
@@ -34,3 +39,19 @@ startButton.addEventListener('click', () => {
         startButton.textContent = '音声を停止';
     }
 })
+replayButton.addEventListener('click', () => {
+    if(audio) {
+        audio.currentTime = 0;
+        audio.play();
+    }
+});
+nextButton.addEventListener('click', () => {
+    if(audio) {
+        audio.pause();
+        audio.currentTime = 0;
+        isPlaying = false;
+        startButton.textContent = '音声を再生';
+        buttonsContainer.classList.add('hidden');
+        startButton.classList.remove('hidden');
+    }
+});
