@@ -67,7 +67,7 @@ html,body {
     text-align: center;
 }
 .hidden {
-    display: none;
+    display: none !important;
 }
 .karuta-image {
     width: 200px;
