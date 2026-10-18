@@ -22,13 +22,6 @@ startButton.addEventListener('click', () => {
         const randomIndex = Math.floor(Math.random() * letters.length);
         item = letters.splice(randomIndex, 1)[0];
         audio = new Audio(`https://raw.githubusercontent.com/Itsukaichi-3project/English_karuta/main/audio/${item}.m4a`);
-        audio.crossOrigin = "anonymous";
-        let audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-        let source = audioCtx.createMediaElementSource(audio);
-        let gainNode = audioCtx.createGain();
-        gainNode.gain.value = 2;
-        source.connect(gainNode);
-        gainNode.connect(audioCtx.destination);
         audio.play();
         subtitle.textContent = `音声を再生中`;
         audio.addEventListener('timeupdate', () => {
